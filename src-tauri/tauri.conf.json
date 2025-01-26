@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "kotoba-chat-tools",
+  "version": "0.1.0",
+  "identifier": "com.kotoba-chat-tools.app",
+  "build": {
+    "beforeDevCommand": "dotnet build src-dotnet/Kotoba.TauriPlugIn/Kotoba.TauriPlugIn.csproj && deno task dev",
+    "beforeBuildCommand": "dotnet publish -c Release src-dotnet/Kotoba.TauriPlugIn/Kotoba.TauriPlugIn.csproj && deno task build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "kotoba-chat-tools",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
