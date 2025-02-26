@@ -1,3 +1,5 @@
+use windows::{core::Media::Control};
+
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
 #[tauri::command]
 fn greet(name: &str) -> String {
@@ -7,6 +9,15 @@ fn greet(name: &str) -> String {
 #[tauri::command]
 fn dotnet_request(request: &str) -> String{
     tauri_dotnet_bridge_host::process_request(request)
+}
+
+// a tauri coomand to get the current Media / now playing song information.
+#[tauri::command]
+fn get_current_media() -> String {
+    // get the current media information using the windows crate
+    let media: String = windows::Media::Control::GetCurrentSession().unwrap();
+    // return the media information as a string
+    media
 }
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]

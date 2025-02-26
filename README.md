@@ -21,6 +21,27 @@ Aplication to interact with the twitch chat , connect and create diferents tools
 - create test on dotnet and investigate if is posible do playwright tests
 - or use c# to scrap with selenium ( to scrap the youtube chat in the future)
 
+
+## Why?
+
+  - React + .Net stack is very popular
+  - I have experience in both but I need a way to demostrate. this is the bad part of work in a private corpo workplace.
+  - I don't want to create an API do complicated things to the user execute it in their machine or upload the api to a server.
+  - all if paackaged in a nice and simple executable.
+  - thanks Tauri, is multiplatform!!!!
+
+## important documentation
+
+  The video I take as inspiration to start this.
+
+  https://www.youtube.com/watch?v=CDEO9qGRw20
+
+# WIndows media control 
+
+https://stackoverflow.com/questions/65011660/how-can-i-get-the-title-of-the-currently-playing-media-in-windows-10-with-python
+
+https://microsoft.github.io/windows-docs-rs/doc/windows/Media/Control/struct.GlobalSystemMediaTransportControlsSessionManager.html#method.GetCurrentSession
+
 ## dotnet
 
 I use this proyect to practice dotnet and react so as well is a Tauri app, the backend will be developed on dotnet
