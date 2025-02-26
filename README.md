@@ -1,5 +1,6 @@
 # Kotoba : Twitch chat tools
 
+![ALERT] in very early developmnet
 
 Aplication to interact with the twitch chat , connect and create diferents tools
 
@@ -9,8 +10,9 @@ Aplication to interact with the twitch chat , connect and create diferents tools
 
 ## Features
 
-- easy log in from the twitch
-- show the chat view 
+- [ ] easy log in from the twitch
+- [ ] show the chat view
+- [ ] get audio from the system media player information 
 
 ## development features
 
@@ -33,7 +35,7 @@ Aplication to interact with the twitch chat , connect and create diferents tools
 ## important documentation
 
   The video I take as inspiration to start this.
-
+  https://www.youtube.com/watch?v=ZRX7jo6wb2o
   https://www.youtube.com/watch?v=CDEO9qGRw20
 
 # WIndows media control 
