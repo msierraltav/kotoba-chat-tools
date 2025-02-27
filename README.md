@@ -13,6 +13,7 @@ Aplication to interact with the twitch chat , connect and create diferents tools
 - [ ] easy log in from the twitch
 - [ ] show the chat view
 - [ ] get audio from the system media player information 
+- [ ] 
 
 ## development features
 
